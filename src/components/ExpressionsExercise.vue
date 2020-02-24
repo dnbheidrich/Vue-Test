@@ -6,14 +6,13 @@
                 <div class="border p-1">
                     <p>Write a math equation Vue can evaluate.</p>
 
-                    <p> {{
+                    <p> {{ 1 + 1
                         <!-- Add your code inside the curlies --> }}</p>
                 </div>
                 <div class="border p-1">
                     <p>Use interpolation to get the customary Hello, World! to display on the screen. Don't
                         forget your quotes</p>
-                    <p> {{
-                        <!-- Add your code inside the curlies --> }}</p>
+                    <p> {{ "Hello" }}</p>
                 </div>
             </div>
         </div>

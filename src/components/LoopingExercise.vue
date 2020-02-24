@@ -9,23 +9,23 @@
                         object to put the value into our html.</p>
                     <p>Then use the index to print the players place in the collection.</p>
                     <!-- add the v-for to player-card -->
-                    <div class="player-card text-center">
-                        <h5> {{
-                            <!--code here--> }}</h5>
+                 <div class="player-card text-center" v-for="(player, index) in players">
+                        <h5> Player {{
+                            index + 1}}</h5>
                         <div>
-                            <img class="img" src="" />
+                            <img :src= "player.photo" />
                         </div>
                         <div>
                             <span>{{
-                                <!--code here-->}}</span>
+                                player.name}}</span>
                         </div>
                         <div>
                             <span>{{
-                                <!--code here--> }}</span>
+                                player.position }}</span>
                         </div>
                         <div>
                             <span>{{
-                                <!--code here--> }}</span>
+                                player.number }}</span>
                         </div>
                     </div>
                 </div>
@@ -35,9 +35,7 @@
                         inside of the template for each property on the object we want to print the key(property name)
                         and value contained at that key.</p>
                     <div class="blog" v-for="(value, key) in blog">
-                        <p>{{
-                            <!--code here-->}}: {{
-                            <!--code here-->}}</p>
+                        <p>{{value}}: {{key}}</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +43,7 @@
     </div>
 </template>
 
-
+// NOTE key = value
 <script>
     export default {
         name: 'looping-exercise',
