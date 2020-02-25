@@ -43,7 +43,7 @@
         data() {
             return {
                 //create a property called myName and set its value to "type your name here"
-                message: "Super secret message here!",
+                message: "Hello World!",
                 //change isActive to true 
                 isActive: true,
                 myName: "Type your name here"

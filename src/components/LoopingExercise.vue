@@ -43,7 +43,7 @@
     </div>
 </template>
 
-// NOTE key = value
+// NOTE key : value = prop : value
 <script>
     export default {
         name: 'looping-exercise',
